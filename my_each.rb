@@ -4,6 +4,8 @@ def my_each (array)
   yield (array[i])
   i = i + 1
   end   
+  array
 end
 
-my_each(array){|x| puts x}
+collection = [1, 2, 3, 4]
+my_each(collection){|x|  "#{x}"}
